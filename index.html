@@ -147,7 +147,7 @@
             const endTime = document.getElementById('end_time').value;
             const status = document.getElementById('status').value;
 
-            fetch('http://51.79.152.83:10078/api/createborrower', {
+            fetch('https://api-lab1-smkletris2.raznar.id/api/createborrower', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -176,7 +176,7 @@
             const startTime = document.getElementById('schedule_start_time').value;
             const endTime = document.getElementById('schedule_end_time').value;
 
-            fetch('http://51.79.152.83:10078/api/createschedule', {
+            fetch('https://api-lab1-smkletris2.raznar.id/api/createschedule', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -200,7 +200,7 @@
 
         // Function to load schedules from the API
         function loadSchedules() {
-            fetch('http://51.79.152.83:10078/api/getallschedules')
+            fetch('https://api-lab1-smkletris2.raznar.id/api/getallschedules')
                 .then(response => response.json())
                 .then(data => {
                     const scheduleList = document.getElementById('schedule-list');
